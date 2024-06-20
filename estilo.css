@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+   
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(#034c8c,#0d7cdd);
+    text-align: center;
+    padding: 15px;
+}
+
+.principal h2 {
+
+font-family: "Press Start 2P", system-ui;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+margin-bottom: 4%;
+color: #0a355a;
+
+}
+
+.principal {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+/*cards*/
+
+.productos {
+    width: 60%;
+    margin-top: 5%;
+    padding: 1.5%;
+    
+}
+
+.productos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+   
+}
+
+.productos ul li .nombre {
+    font-size: 1rem;
+}
+
+.productos ul li .precios {
+    margin-top: 5px;
+}
+
+.productos ul li {
+width: 180px;
+height: 240px;
+padding: 18px;
+border-radius: 10px;
+border: 3px solid black;
+background: linear-gradient(#034c8c,#0d7cddf0,#35099ace);
+margin-top: 2.5%;
+color: whitesmoke;
+font-size: 1.1rem;
+
+}
+
+.productos ul li:hover {
+    transform:scale(1.1);
+    box-shadow: 5px 5px 20px 3px #4b7291;
+}
+
+.productos ul li img {
+width: 140px;
+height: 150px;
+border-radius: 5px;
+text-align: center;
+margin: 0 auto ;
+}
+
+.productos ul li .eliminar {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    margin-left: 12vh;
+    
+}
+
+
+.productos ul li .papelera {
+    width: 17px;
+    height: 17px;
+           
+}
+
+.productos ul li .eliminar:hover {
+ transform: scale(1.1);
+} 
+
+
+/*formuario*/
+
+.formulario {
+    width: 40%;
+    text-align: center;
+    margin-top: 6.5%;
+   
+}
+
+.formulario fieldset {
+    width: 70%;
+    height: auto;
+    margin: 10% auto;
+    border: none;
+       
+}
+
+.formulario .datos input {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    border: 3px solid #1a4993;
+    margin: 2vh 0;
+    color: #103672;
+}
+
+.formulario .datos .botones {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    gap: 2vh;
+}
+
+.formulario .datos .botones button {
+    width: 47%;
+    height: 40px;
+    background: #0a4172; 
+    margin: 2vh auto;
+    border-radius: 20px;
+    color: whitesmoke;
+    border: none;
+
+}
+
+.formulario .datos .botones button:hover {
+    background: linear-gradient(#034c8c,#0d7cddf0,#35099ace);
+    border: 3px solid rgb(198, 196, 196); 
+}
+
+.respuesta {
+    margin-top: 25px;
+    display: none;
+}
+
+.respuesta .mensaje {
+    font-size: 20px;
+    color: #103672;
+    align-items: center;
+}
+
+.mensaje img {
+    width: 20px;
+    height: 20px;
+
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 135px;
+    background: linear-gradient(#034c8c,#0d7cdd);
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 5%;
+    padding: 1%;
+    font-size: 1.2rem;
+}
+
+footer img {
+    height: 8vh;
+}
+
+
+/*responsivo mobile*/
+
+@media (max-width: 500px) {
+ .header {
+    width: 100%;
+ } 
+ .principal {
+    display: block;
+ }
+
+ /*cards*/
+
+ .productos {
+    width: 90%;
+    margin: 20px auto;
+ }
+
+ .productos ul li {
+    width: 240px;
+    height: 295px;
+    padding: 26px;
+    margin: 13px auto;
+ }
+
+ .productos ul li img {
+    width: 180px;
+    height: 190px;
+ }
+
+ /*formulario*/
+
+ .formulario {
+    width: 100%;
+ }
+
+ .formulario fieldset {
+    width: 87%;
+ }
+
+ /*footer*/
+ footer img {
+    height: 5vh;
+}
+
+}
+
+/*responsivo tablet*/
+
+@media (min-width:501px) and (max-width:700px) {
+    
+    
+    .principal {
+        display: block;
+    }
+
+    .productos {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .productos ul li {
+        margin: 13px auto;
+    }
+    
+    .formulario {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+}
